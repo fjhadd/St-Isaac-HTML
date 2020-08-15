@@ -2717,6 +2717,7 @@ legacy normal stretch center safe-center unsafe-center start end self-start self
   width: 100%;
   height: auto;
   position: relative;
+  background-position: center !important;
   background-size: cover !important;
 }
 
@@ -2767,9 +2768,39 @@ legacy normal stretch center safe-center unsafe-center start end self-start self
 .grid .button {
   width: 100%;
   max-width: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .button.button-solid {
   background: #3e7f8d;
   color: #ffff;
+}
+
+.card-faq {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-left: 2px solid #3e7f8d;
+}
+
+.card-faq .card-faq_q {
+  padding: 1rem;
+  margin: 0;
+  background-color: rgba(62, 127, 141, 0.2);
+}
+
+.card-faq .card-faq_q:before {
+  content: "Q: ";
+  font-size: 1.5em;
+}
+
+.card-faq .card-faq_a {
+  padding: 1rem;
+  margin: 0;
+  background-color: rgba(62, 127, 141, 0.1);
+}
+
+.card-faq .card-faq_a:before {
+  content: "A: ";
+  font-size: 1.5em;
 }

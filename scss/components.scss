@@ -1,5 +1,6 @@
 .card {
     width: 100%; height: auto; position: relative;
+    background-position: center !important;
     background-size: cover !important;
 
     &:before {
@@ -27,4 +28,24 @@
 .button.button-solid {
     background: $colorPrimary;
     color: $colorWhite;
+}
+.card-faq {
+    box-sizing: border-box;
+    border-left: 2px solid $colorPrimary;
+    .card-faq_q {
+        padding: 1rem; margin:0;
+        background-color:rgba($colorPrimary, .2);
+        &:before {
+            content: "Q: ";
+            font-size: 1.5em;
+        }
+    }
+    .card-faq_a {
+        padding: 1rem; margin:0;
+        background-color:rgba($colorPrimary, .1);
+        &:before {
+            content: "A: ";
+            font-size: 1.5em;
+        }
+    }
 }
