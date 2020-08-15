@@ -1,0 +1,30 @@
+.card {
+    width: 100%; height: auto; position: relative;
+    background-size: cover !important;
+
+    &:before {
+        width: 100%; display: block;	
+        content: "";
+        padding-top: 75%;
+    }
+    a {	    
+        width: 100%; height: auto; position: absolute; min-height:1%; bottom: 0; padding: 10px 5px;
+        display: flex;justify-content: center;flex-direction: column;
+        color: #fff; font-size: 1.25em; text-transform: capitalize; text-decoration: none; text-align: center;
+        background-color:rgba($colorPrimary, .8);
+        transition-property:all ; transition-duration: 0.2s; transition-timing-function: ease-out;
+        box-sizing: border-box;
+    }
+    &:hover a{
+        min-height: 100%;
+    }
+}
+
+.grid .button {
+    width: 100%; max-width: none;
+    box-sizing: border-box;
+}
+.button.button-solid {
+    background: $colorPrimary;
+    color: $colorWhite;
+}
