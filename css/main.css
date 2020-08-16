@@ -2728,7 +2728,7 @@ legacy normal stretch center safe-center unsafe-center start end self-start self
   padding-top: 75%;
 }
 
-.card a {
+.card span {
   width: 100%;
   height: auto;
   position: absolute;
@@ -2761,8 +2761,10 @@ legacy normal stretch center safe-center unsafe-center start end self-start self
           box-sizing: border-box;
 }
 
-.card:hover a {
-  min-height: 100%;
+@media only screen and (min-width: 1024px) {
+  .card:hover span {
+    min-height: 100%;
+  }
 }
 
 .grid .button {
@@ -2787,20 +2789,26 @@ legacy normal stretch center safe-center unsafe-center start end self-start self
   padding: 1rem;
   margin: 0;
   background-color: rgba(62, 127, 141, 0.2);
+  font-size: 1.875em;
+  line-height: 1.25em;
 }
 
 .card-faq .card-faq_q:before {
   content: "Q: ";
   font-size: 1.5em;
+  opacity: 0.5;
 }
 
 .card-faq .card-faq_a {
   padding: 1rem;
   margin: 0;
   background-color: rgba(62, 127, 141, 0.1);
+  font-size: 1.25em;
+  line-height: 1.25em;
 }
 
 .card-faq .card-faq_a:before {
   content: "A: ";
   font-size: 1.5em;
+  opacity: 0.5;
 }

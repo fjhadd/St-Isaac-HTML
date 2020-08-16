@@ -8,7 +8,7 @@
         content: "";
         padding-top: 75%;
     }
-    a {	    
+    span {	    
         width: 100%; height: auto; position: absolute; min-height:1%; bottom: 0; padding: 10px 5px;
         display: flex;justify-content: center;flex-direction: column;
         color: #fff; font-size: 1.25em; text-transform: capitalize; text-decoration: none; text-align: center;
@@ -16,8 +16,10 @@
         transition-property:all ; transition-duration: 0.2s; transition-timing-function: ease-out;
         box-sizing: border-box;
     }
-    &:hover a{
-        min-height: 100%;
+    @include mq(md) {
+        &:hover span{
+            min-height: 100%;
+        }
     }
 }
 
@@ -35,17 +37,21 @@
     .card-faq_q {
         padding: 1rem; margin:0;
         background-color:rgba($colorPrimary, .2);
+        font-size: 1.875em; line-height: 1.25em;
         &:before {
             content: "Q: ";
             font-size: 1.5em;
+            opacity: 0.5;
         }
     }
     .card-faq_a {
         padding: 1rem; margin:0;
         background-color:rgba($colorPrimary, .1);
+        font-size: 1.25em; line-height: 1.25em;
         &:before {
             content: "A: ";
             font-size: 1.5em;
+            opacity: 0.5;
         }
     }
 }
