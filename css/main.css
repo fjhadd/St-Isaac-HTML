@@ -2716,6 +2716,7 @@ legacy normal stretch center safe-center unsafe-center start end self-start self
 .card {
   width: 100%;
   height: auto;
+  display: block;
   position: relative;
   background-position: center !important;
   background-size: cover !important;
