@@ -2768,6 +2768,55 @@ legacy normal stretch center safe-center unsafe-center start end self-start self
   }
 }
 
+.card--simple {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  background-position: center !important;
+  background-size: cover !important;
+}
+
+.card--simple:before {
+  width: 100%;
+  display: block;
+  content: "";
+  padding-top: 75%;
+}
+
+.card--simple span {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  min-height: 1%;
+  bottom: 0;
+  padding: 10px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #fff;
+  font-size: 1.25em;
+  text-transform: capitalize;
+  text-decoration: none;
+  text-align: center;
+  background-color: rgba(62, 127, 141, 0.8);
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .grid .button {
   width: 100%;
   max-width: none;
@@ -2783,7 +2832,7 @@ legacy normal stretch center safe-center unsafe-center start end self-start self
 .card-faq {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-left: 2px solid #3e7f8d;
+  border-left: 3px solid #3e7f8d;
 }
 
 .card-faq .card-faq_q {
@@ -2812,4 +2861,21 @@ legacy normal stretch center safe-center unsafe-center start end self-start self
   content: "A: ";
   font-size: 1.5em;
   opacity: 0.5;
+}
+
+.quote {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-left: 3px solid #3e7f8d;
+  padding: 1rem;
+  margin: 0;
+  margin-bottom: 24px;
+  background-color: rgba(62, 127, 141, 0.2);
+  font-size: 1.875em;
+  line-height: 1.25em;
+  font-style: italic;
+}
+
+.quote .credit {
+  font-size: .8em;
 }

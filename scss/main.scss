@@ -29,6 +29,24 @@ $colorWhite:#ffff;
     }
 }
 
+.card--simple {
+    width: 100%; height: auto; display: block; position: relative;
+    background-position: center !important; 
+    background-size: cover !important;
+    &:before {
+        width: 100%; display: block;	
+        content: "";
+        padding-top: 75%;
+    }
+    span {	    
+        width: 100%; height: 100%; position: absolute; min-height:1%; bottom: 0; padding: 10px 30px;
+        display: flex;justify-content: center;flex-direction: column;
+        color: #fff; font-size: 1.25em; text-transform: capitalize; text-decoration: none; text-align: center;
+        background-color:rgba($colorPrimary, .8);
+        transition-property:all ; transition-duration: 0.2s; transition-timing-function: ease-out;
+        box-sizing: border-box;
+    }
+}
 .grid .button {
     width: 100%; max-width: none;
     box-sizing: border-box;
@@ -39,11 +57,12 @@ $colorWhite:#ffff;
 }
 .card-faq {
     box-sizing: border-box;
-    border-left: 2px solid $colorPrimary;
+    border-left: 3px solid $colorPrimary;
     .card-faq_q {
         padding: 1rem; margin:0;
         background-color:rgba($colorPrimary, .2);
         font-size: 1.875em; line-height: 1.25em;
+        
         &:before {
             content: "Q: ";
             font-size: 1.5em;
@@ -59,5 +78,17 @@ $colorWhite:#ffff;
             font-size: 1.5em;
             opacity: 0.5;
         }
+    }
+}
+
+.quote {
+    box-sizing: border-box;
+    border-left: 3px solid $colorPrimary;
+    padding: 1rem; margin:0;margin-bottom: 24px;
+    background-color:rgba($colorPrimary, .2);
+    font-size: 1.875em; line-height: 1.25em;
+    font-style: italic;
+    .credit {
+        font-size: .8em;
     }
 }
