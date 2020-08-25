@@ -3,7 +3,9 @@ $colorParagraphs:#777;
 $colorWhite:#ffff;
 
 @import 'grid-grid/grid-grid';
-
+p:empty {
+    display: none;
+}
 .card {
     width: 100%; height: auto; display: block; position: relative;
     background-position: center !important; 
