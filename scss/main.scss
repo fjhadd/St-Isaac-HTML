@@ -5,8 +5,11 @@ $colorWhite:#ffff;
 @import 'grid-grid/grid-grid';
 p:empty {
     display: none;
+} 
+.st-issac { 
+    color: white;
 }
-.card {
+.card { 
     width: 100%; height: auto; display: block; position: relative;
     background-position: center !important; 
     background-size: cover !important;
